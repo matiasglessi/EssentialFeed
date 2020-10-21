@@ -14,7 +14,6 @@
 		60FB81B8253FB0A80048AFAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60FB81B7253FB0A80048AFAA /* Assets.xcassets */; };
 		60FB81BB253FB0A80048AFAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60FB81B9253FB0A80048AFAA /* LaunchScreen.storyboard */; };
 		60FB81E5253FB0E00048AFAA /* RemoteFeedLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FB81E4253FB0E00048AFAA /* RemoteFeedLoaderTests.swift */; };
-		60FB81EA253FB1000048AFAA /* LoadFeedResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FB81E9253FB1000048AFAA /* LoadFeedResult.swift */; };
 		60FB81EF253FB10B0048AFAA /* FeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FB81EE253FB10B0048AFAA /* FeedLoader.swift */; };
 		60FB81F4253FB1300048AFAA /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FB81F3253FB1300048AFAA /* FeedItem.swift */; };
 /* End PBXBuildFile section */
@@ -42,7 +41,6 @@
 		60FB81C7253FB0A80048AFAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		60FB81D2253FB0A80048AFAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		60FB81E4253FB0E00048AFAA /* RemoteFeedLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoaderTests.swift; sourceTree = "<group>"; };
-		60FB81E9253FB1000048AFAA /* LoadFeedResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadFeedResult.swift; sourceTree = "<group>"; };
 		60FB81EE253FB10B0048AFAA /* FeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoader.swift; sourceTree = "<group>"; };
 		60FB81F3253FB1300048AFAA /* FeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -94,7 +92,6 @@
 				60FB81B7253FB0A80048AFAA /* Assets.xcassets */,
 				60FB81B9253FB0A80048AFAA /* LaunchScreen.storyboard */,
 				60FB81BC253FB0A80048AFAA /* Info.plist */,
-				60FB81E9253FB1000048AFAA /* LoadFeedResult.swift */,
 				60FB81F8253FB3410048AFAA /* FeedFeature */,
 			);
 			path = EssentialFeed;
@@ -230,7 +227,6 @@
 				60FB81B3253FB0A70048AFAA /* ViewController.swift in Sources */,
 				60FB81AF253FB0A70048AFAA /* AppDelegate.swift in Sources */,
 				60FB81F4253FB1300048AFAA /* FeedItem.swift in Sources */,
-				60FB81EA253FB1000048AFAA /* LoadFeedResult.swift in Sources */,
 				60FB81EF253FB10B0048AFAA /* FeedLoader.swift in Sources */,
 				60FB81B1253FB0A70048AFAA /* SceneDelegate.swift in Sources */,
 			);
