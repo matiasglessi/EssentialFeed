@@ -47,6 +47,8 @@ class RemoteFeedLoaderTests: XCTestCase {
         XCTAssertEqual(capturedErrors, [.connectivity])
     }
     
+    
+    
     // MARK: - Helpers
     
     private func makeSUT(url: URL = URL(string: "http://a-url.com")!) -> (sut: RemoteFeedLoader,
