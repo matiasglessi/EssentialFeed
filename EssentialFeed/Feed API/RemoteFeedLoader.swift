@@ -30,7 +30,7 @@ public final class RemoteFeedLoader {
             }
             else {
                 completion(.connectivity)
-            }
+            } 
         }
     }
 }
