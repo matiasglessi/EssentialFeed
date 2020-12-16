@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		602F75AE258A4DC1004D4791 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602F75AD258A4DC1004D4791 /* HTTPClient.swift */; };
 		60C3D2E1254248EA0063BAF9 /* RemoteFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C3D2E0254248EA0063BAF9 /* RemoteFeedLoader.swift */; };
 		60FB81AF253FB0A70048AFAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FB81AE253FB0A70048AFAA /* AppDelegate.swift */; };
 		60FB81B1253FB0A70048AFAA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FB81B0253FB0A70048AFAA /* SceneDelegate.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		602F75AD258A4DC1004D4791 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		60C3D2E0254248EA0063BAF9 /* RemoteFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoader.swift; sourceTree = "<group>"; };
 		60FB81AB253FB0A70048AFAA /* EssentialFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EssentialFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60FB81AE253FB0A70048AFAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				60C3D2E0254248EA0063BAF9 /* RemoteFeedLoader.swift */,
+				602F75AD258A4DC1004D4791 /* HTTPClient.swift */,
 			);
 			path = "Feed API";
 			sourceTree = "<group>";
@@ -238,6 +241,7 @@
 				60FB81B3253FB0A70048AFAA /* ViewController.swift in Sources */,
 				60FB81AF253FB0A70048AFAA /* AppDelegate.swift in Sources */,
 				60FB81F4253FB1300048AFAA /* FeedItem.swift in Sources */,
+				602F75AE258A4DC1004D4791 /* HTTPClient.swift in Sources */,
 				60FB81EF253FB10B0048AFAA /* FeedLoader.swift in Sources */,
 				60C3D2E1254248EA0063BAF9 /* RemoteFeedLoader.swift in Sources */,
 				60FB81B1253FB0A70048AFAA /* SceneDelegate.swift in Sources */,
