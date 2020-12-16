@@ -7,6 +7,17 @@
 
 import Foundation
 
+public enum  HTTPClientResult {
+    case success(Data, HTTPURLResponse)
+    case failure(Error)
+}
+
+public protocol HTTPClient {
+    func get(from url: URL,
+             completion: @escaping (HTTPClientResult) -> Void)
+}
+
+
 public final class RemoteFeedLoader {
     
     private let url: URL
@@ -33,8 +44,9 @@ public final class RemoteFeedLoader {
             switch result {
             case let .success(data, _):
                 
-                if let _ = try? JSONSerialization.jsonObject(with: data) {
-                    completion(.success([]))
+                if let root = try? JSONDecoder().decode(Root.self,
+                                                      from: data) {
+                    completion(.success(root.items))
                 }
                 else {
                     completion(.failure(.invalidData))
@@ -47,14 +59,10 @@ public final class RemoteFeedLoader {
     }
 }
 
-
-public enum  HTTPClientResult {
-    case success(Data, HTTPURLResponse)
-    case failure(Error)
+private struct Root: Decodable {
+    let items: [FeedItem]
 }
 
 
-public protocol HTTPClient {
-    func get(from url: URL, completion: @escaping (HTTPClientResult) -> Void)
-}
+
  
