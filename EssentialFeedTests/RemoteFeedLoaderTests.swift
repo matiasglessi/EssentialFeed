@@ -111,14 +111,14 @@ class RemoteFeedLoaderTests: XCTestCase {
                         description: description,
                         location: location,
                         imageURL: imageURL)
-        let json = [
+
+        
+        let json : [String : String] = [
             "id" : id.uuidString,
             "description" : description,
             "location" : location,
             "image" : imageURL.absoluteString
-        ].reduce(into: [String:Any](), { accumulated, element in
-            if let value = element.value { accumulated[element.key] = value }
-        })
+        ].compactMapValues { $0 }
     
         return (item, json)
     }
