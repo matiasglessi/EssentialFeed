@@ -15,8 +15,12 @@ class URLSessionHTTPClient {
         self.session = session
     }
     
-    func get(from url: URL, completion: (HTTPClientResult) -> Void) {
-        session.dataTask(with: url) { _, _, _ in }.resume()
+    func get(from url: URL, completion: @escaping (HTTPClientResult) -> Void) {
+        session.dataTask(with: url) { _, _, error in
+            if let error = error {
+                completion(.failure(error))
+            }
+        }.resume()
     }
 }
 
@@ -40,7 +44,12 @@ class URLSessionHTTPClientTests: XCTestCase {
         let session = URLSessionSpy()
         let error = NSError(domain: "any error", code: 1)
         session.stub(url: url, error: error)
+        
         let sut = URLSessionHTTPClient(session: session)
+        
+        let exp = expectation(description: "Wait for completion")
+        
+        
         
         sut.get(from: url) { result in
             switch result {
@@ -49,7 +58,10 @@ class URLSessionHTTPClientTests: XCTestCase {
             default:
                 XCTFail("Expected failure with error \(error), got \(result) instead")
             }
+            exp.fulfill()
         }
+        
+        wait(for: [exp], timeout: 1.0)
         
     }
     
