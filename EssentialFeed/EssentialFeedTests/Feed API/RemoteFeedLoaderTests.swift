@@ -38,10 +38,10 @@ class RemoteFeedLoaderTests: XCTestCase {
     func test_load_deliversErrorOnClientError() {
         let (sut, client) = makeSUT()
         
-        expect(sut, toCompleteWith: .failure(RemoteFeedLoader.Error.connectivity)) {
+        expect(sut, toCompleteWith: .failure(RemoteFeedLoader.Error.connectivity), when: {
             let clientError = NSError(domain: "Test Error", code: 0)
             client.complete(with: clientError)
-        }
+        })
     }
     
     
@@ -51,10 +51,10 @@ class RemoteFeedLoaderTests: XCTestCase {
         let samples = [199, 201, 300, 400, 500]
         
         samples.enumerated().forEach { index, code in
-            expect(sut, toCompleteWith: .failure(RemoteFeedLoader.Error.invalidData)) {
+            expect(sut, toCompleteWith: .failure(RemoteFeedLoader.Error.invalidData), when: {
                 let json = makeItemsJSON([])
                 client.complete(withStatusCode: code, data: json, at: index)
-            }
+            })
         }
     }
     
@@ -62,19 +62,19 @@ class RemoteFeedLoaderTests: XCTestCase {
         let (sut, client) = makeSUT()
 
         
-        expect(sut, toCompleteWith: .failure(RemoteFeedLoader.Error.invalidData)) {
+        expect(sut, toCompleteWith: .failure(RemoteFeedLoader.Error.invalidData), when: {
             let invalidJSON = Data("invalid json".utf8)
             client.complete(withStatusCode: 200, data: invalidJSON)
-        }
+        })
     }
     
     func test_load_deliversNoItemsOn200HTTPResponseWithEmptyJSONList() {
         let (sut, client) = makeSUT()
 
-        expect(sut, toCompleteWith: .success([])) {
+        expect(sut, toCompleteWith: .success([]), when: {
             let emptyListJSON = makeItemsJSON([])
             client.complete(withStatusCode: 200, data: emptyListJSON)
-        }
+        })
     }
     
     func test_load_deliversItemsOn200HTTPResponseWithJSONList() {
@@ -88,10 +88,10 @@ class RemoteFeedLoaderTests: XCTestCase {
                              location: "a location",
                              imageURL: URL(string: "http://another-url.com")!)
         
-        expect(sut, toCompleteWith: .success([item1.model, item2.model])) {
+        expect(sut, toCompleteWith: .success([item1.model, item2.model]), when: {
             let json = makeItemsJSON([item1.json, item2.json])
             client.complete(withStatusCode: 200, data: json)
-        }
+        })
     }
     
     func test_load_doesNotDeliverResultAfterSUTInstancesHasBeenDeallocated() {
