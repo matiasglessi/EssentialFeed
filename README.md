@@ -1,4 +1,4 @@
-# Essential Feed App – Image Feed Feature
+# Essential Feed App – Image Feed Feature  [![Build Status](https://travis-ci.com/matiasglessi/EssentialFeed.svg?branch=main)](https://travis-ci.com/matiasglessi/EssentialFeed)
 
 ## BDD Specs
 
