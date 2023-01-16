@@ -67,7 +67,6 @@ class RemoteFeedLoaderTests: XCTestCase {
         }
     }
     
-    
     func test_load_deliversNoItemsOn200HTTPResponseWithEmptyJSONList() {
         let (sut, client) = makeSUT()
         
