@@ -13,6 +13,7 @@
 		B3AA1AA82967667300363295 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AA1AA72967667300363295 /* FeedItem.swift */; };
 		B3AA1AAA29686C7800363295 /* RemoteFeedLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AA1AA929686C7800363295 /* RemoteFeedLoaderTests.swift */; };
 		B3F4AE5F2968BD77002C02D0 /* RemoteFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F4AE5E2968BD77002C02D0 /* RemoteFeedLoader.swift */; };
+		B3F4AE6129788ADF002C02D0 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F4AE6029788ADF002C02D0 /* HTTPClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +34,7 @@
 		B3AA1AA72967667300363295 /* FeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
 		B3AA1AA929686C7800363295 /* RemoteFeedLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoaderTests.swift; sourceTree = "<group>"; };
 		B3F4AE5E2968BD77002C02D0 /* RemoteFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoader.swift; sourceTree = "<group>"; };
+		B3F4AE6029788ADF002C02D0 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 		B3AA1A80296755D900363295 = {
 			isa = PBXGroup;
 			children = (
+				B3F4AE6029788ADF002C02D0 /* HTTPClient.swift */,
 				B3AA1A8C296755D900363295 /* EssentialFeed */,
 				B3AA1A98296755D900363295 /* EssentialFeedTests */,
 				B3AA1A8B296755D900363295 /* Products */,
@@ -219,6 +222,7 @@
 			files = (
 				B3AA1AA82967667300363295 /* FeedItem.swift in Sources */,
 				B3F4AE5F2968BD77002C02D0 /* RemoteFeedLoader.swift in Sources */,
+				B3F4AE6129788ADF002C02D0 /* HTTPClient.swift in Sources */,
 				B3AA1AA62967662A00363295 /* FeedLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
