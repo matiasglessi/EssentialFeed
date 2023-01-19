@@ -55,7 +55,6 @@ class RemoteFeedLoaderTests: XCTestCase {
                 client.complete(withStatusCode: code, data: json, at: index)
             }
         }
-            
     }
     
     func test_load_deliversErrorOn200HTTPResponseWithInvalidJSON() {
