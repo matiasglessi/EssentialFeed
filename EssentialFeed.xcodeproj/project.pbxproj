@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B30838372982DB3C002D158E /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30838362982DB3B002D158E /* URLSessionHTTPClient.swift */; };
 		B3AA1A95296755D900363295 /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3AA1A8A296755D900363295 /* EssentialFeed.framework */; };
 		B3AA1A9B296755D900363295 /* EssentialFeed.h in Headers */ = {isa = PBXBuildFile; fileRef = B3AA1A8D296755D900363295 /* EssentialFeed.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B3AA1AA62967662A00363295 /* FeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AA1AA52967662A00363295 /* FeedLoader.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B30838362982DB3B002D158E /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
 		B3AA1A8A296755D900363295 /* EssentialFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EssentialFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3AA1A8D296755D900363295 /* EssentialFeed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EssentialFeed.h; sourceTree = "<group>"; };
 		B3AA1A94296755D900363295 /* EssentialFeedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialFeedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,6 +115,7 @@
 				B3F4AE6229788B18002C02D0 /* FeedItemsMapper.swift */,
 				B3F4AE6029788ADF002C02D0 /* HTTPClient.swift */,
 				B3F4AE5E2968BD77002C02D0 /* RemoteFeedLoader.swift */,
+				B30838362982DB3B002D158E /* URLSessionHTTPClient.swift */,
 			);
 			path = "Feed API";
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 				B3F4AE5F2968BD77002C02D0 /* RemoteFeedLoader.swift in Sources */,
 				B3F4AE6129788ADF002C02D0 /* HTTPClient.swift in Sources */,
 				B3AA1AA62967662A00363295 /* FeedLoader.swift in Sources */,
+				B30838372982DB3C002D158E /* URLSessionHTTPClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
