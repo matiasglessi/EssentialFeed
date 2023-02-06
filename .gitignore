@@ -105,6 +105,6 @@ xcuserdata
 /*.gcno
 **/xcshareddata/WorkspaceSettings.xcsettings
 *.xcuserstate
- EssentialFeed.xcodeproj/project.xcworkspace/xcuserdata/matiasglessi.xcuserdatad/UserInterfaceState.xcuserstate
+.DS_Store
 
 # End of https://www.toptal.com/developers/gitignore/api/xcode,swiftpm,swiftpackagemanager,swift
