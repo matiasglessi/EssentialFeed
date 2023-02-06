@@ -101,11 +101,10 @@ xcuserdata
 ### Xcode Patch ###
 *.xcodeproj/*
 !*.xcodeproj/project.pbxproj
-!*.xcodeproj/xcshareddata/
-!*.xcodeproj/project.xcworkspace/
 !*.xcworkspace/contents.xcworkspacedata
 /*.gcno
 **/xcshareddata/WorkspaceSettings.xcsettings
 *.xcuserstate
+ EssentialFeed.xcodeproj/project.xcworkspace/xcuserdata/matiasglessi.xcuserdatad/UserInterfaceState.xcuserstate
 
 # End of https://www.toptal.com/developers/gitignore/api/xcode,swiftpm,swiftpackagemanager,swift
