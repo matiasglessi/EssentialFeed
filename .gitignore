@@ -7,7 +7,7 @@
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
 
 ## User settings
-#xcuserdata/
+xcuserdata/
 
 ## compatibility with Xcode 8 and earlier (ignoring not required starting Xcode 9)
 *.xcscmblueprint
@@ -99,6 +99,12 @@ xcuserdata
 ## Xcode 8 and earlier
 
 ### Xcode Patch ###
-
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/project.xcworkspace/
+!*.xcworkspace/contents.xcworkspacedata
+/*.gcno
+**/xcshareddata/WorkspaceSettings.xcsettings
+*.xcuserstate
 
 # End of https://www.toptal.com/developers/gitignore/api/xcode,swiftpm,swiftpackagemanager,swift
